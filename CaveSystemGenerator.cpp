@@ -334,12 +334,12 @@ void ACaveSystemGenerator::BuildTunnelMesh(const FTunnelPath& Path, int32 PathIn
 			const FVector& B1 = RingB[SNext];
 
 			AddVert(A0, CenterA, AxisA, U0, V0);
-			AddVert(B0, CenterB, AxisB, U0, V1);
 			AddVert(A1, CenterA, AxisA, U1, V0);
+			AddVert(B0, CenterB, AxisB, U0, V1);
 
 			AddVert(A1, CenterA, AxisA, U1, V0);
-			AddVert(B0, CenterB, AxisB, U0, V1);
 			AddVert(B1, CenterB, AxisB, U1, V1);
+			AddVert(B0, CenterB, AxisB, U0, V1);
 
 			VertexCount += 6;
 		}
